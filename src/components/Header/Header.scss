@@ -1,0 +1,23 @@
+.header{
+     padding: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.logo img {
+     width: 250px;
+}
+.search input{
+     padding: 10px;
+     outline: none;
+     border: none;
+}
+input~input{
+     margin-left: 2px;
+}
+.search input[type="text"] {
+
+} 
+.search input[type="submit"] {
+     width: 80px;
+}
