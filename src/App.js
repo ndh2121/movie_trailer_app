@@ -24,7 +24,6 @@ function App() {
             query: inputSearch,
          },
       });
-
       // setSelectedMovie(data.results[3]);
       setMovies(data.results);
       await selectMovie(data.results[6]);
