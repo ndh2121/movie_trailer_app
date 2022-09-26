@@ -214,7 +214,18 @@ input {
       font-size: 4rem;
    }
    .youtube_container{
+      top: 100px;
       left: 0;
       right: 0;
+   }
+   .btn_close{
+      background-color: transparent;
+      color: white;
+      z-index: 20;
+      right: 0;
+      left: 75%;
+      top: -62%;
+      bottom: none;
+      padding: 0;
    }
 }
