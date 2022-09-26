@@ -11,6 +11,9 @@ body {
    font-weight: 400;
    line-height: 1.5;
 }
+html {
+   font-size: 62.5%;
+}
 /*
 scroolbar
 */
@@ -165,7 +168,7 @@ input {
    font-weight: 600;
    cursor: pointer;
 }
-.btn_close{
+.btn_close {
    text-align: center;
    padding: 10px 20px;
    line-height: 30px;
@@ -181,4 +184,37 @@ input {
    top: 50px;
    right: 190px;
    bottom: 50px;
+}
+
+@media only screen and (max-width: 739px) {
+   .header {
+      padding: 12px 14px;
+      position: fixed;
+      background-color: #000000;
+      box-shadow: rgba(30, 27, 30, 0.8) 0px 7px 29px 0px;
+      transition: background-color 0.3s ease;
+   }
+   .wrapper_poster {
+      grid-template-columns: 1fr 1fr;
+   }
+   .logo img {
+      width: 15rem;
+   }
+   .search input[type="text"] {
+      width: 10rem;
+      padding: 6px 10px;
+      font-size: 1.2rem;
+   }
+   .search button {
+      width: 5rem;
+      padding: 6px 5px;
+      font-size: 1.2rem;
+   }
+   .hero_content h1{
+      font-size: 4rem;
+   }
+   .youtube_container{
+      left: 0;
+      right: 0;
+   }
 }

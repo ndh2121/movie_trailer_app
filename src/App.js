@@ -60,7 +60,6 @@ function App() {
       const trailer = selectedMovie.videos.results.find((vid) => {
          return vid.name === "Official Trailer" || vid.name === "Teaser Trailer";
       });
-      // console.log(trailer.key);
       return (
          <YouTube
             videoId={trailer.key}
@@ -82,6 +81,7 @@ function App() {
       header.classList.toggle("sticky", window.scrollY > 250);
    });
 
+   console.log(selectedMovie);
    return (
       <div className="App">
          <header className="header">
@@ -100,7 +100,7 @@ function App() {
          <section
             className="hero"
             style={{
-               backgroundImage: `linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(${IMAGE_PATH_original}${selectedMovie.backdrop_path})`,
+               backgroundImage: `linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(${IMAGE_PATH_original}${selectedMovie.backdrop_path ? selectedMovie.backdrop_path: selectedMovie.poster_path})`,
             }}
          >
             <div className="hero_content max_center ">
@@ -109,6 +109,7 @@ function App() {
                <button
                   className="btn_primary"
                   onClick={() => {
+                     
                      setPlayTrailer(true);
                   }}
                >
