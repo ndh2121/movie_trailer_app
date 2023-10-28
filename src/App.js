@@ -133,7 +133,9 @@ function App() {
          </section>
          <div className="container_poster">
             <div>
-               <div className="wrapper_poster">{renderMovies()}</div>
+               <div className="wrapper_poster">
+                  {renderMovies()}
+               </div>
             </div>
          </div>
       </div>
