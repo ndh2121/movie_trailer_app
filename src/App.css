@@ -78,6 +78,7 @@ input {
 .poster {
    max-width: 100%;
    background-size: cover;
+   cursor: pointer;
 }
 .poster img {
    display: block;
@@ -86,10 +87,11 @@ input {
 .poster_title {
    margin-top: 10px;
    color: #fff;
+   font-size: 1.5rem;
 }
 .header {
    width: 100%;
-   padding: 15px 50px;
+   padding: 0px 10rem;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -104,8 +106,9 @@ input {
    transition: background-color 0.3s ease;
 }
 .logo img {
-   width: 200px;
+   width: 130px;
 }
+
 .search input,
 .search button {
    padding: 10px 15px;
@@ -116,6 +119,7 @@ input {
 .search input[type="text"] {
    background-color: #757474;
    color: white;
+   border-radius: 5px;
 }
 ::-webkit-input-placeholder {
    /* Edge */
@@ -142,7 +146,7 @@ input {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   height: 700px;
+   height: 750px;
    display: flex;
    align-items: flex-end;
    position: relative;
@@ -157,14 +161,24 @@ input {
 
 .hero_content h1 {
    margin-top: 15px;
-   font-size: 60px;
+   font-size: 70px;
+   line-height: 70px;
+   letter-spacing: -3px;
 }
+
+.hero_desc {
+   font-size: 1.4rem;
+}
+
 .btn_primary {
-   background-color: #de0611;
+   display: flex;
+   align-items: center;
+   position: relative;
+   background-color: #ae0b13;
    font-size: 25px;
    color: white;
-   border-radius: 10px;
-   padding: 15px 25px;
+   border-radius: 6px;
+   padding: 12px 25px;
    font-weight: 600;
    cursor: pointer;
 }
@@ -174,16 +188,22 @@ input {
    line-height: 30px;
    font-size: 20px;
    position: absolute;
-   left: 80px;
+   left: 50px;
    bottom: 100px;
+}
+.btn_play {
+   font-size: 4rem;
+   margin-right: 20px;
 }
 
 .youtube_container {
    position: absolute;
    left: 190px;
-   top: 50px;
+   top: 30px;
    right: 190px;
    bottom: 50px;
+   z-index: 12;
+   height: 650px;
 }
 
 @media only screen and (max-width: 739px) {
